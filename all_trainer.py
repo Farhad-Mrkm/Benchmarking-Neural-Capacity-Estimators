@@ -44,7 +44,7 @@ def all_trainer(typeinp,nit_params,critic_params,SNR,estimator='mine',init_epoch
   
   from NITs import NIT,_Channel,PeakConstraint
   from estimators import MI_Est_Losses
-  from mi_nets import ConcatCritic
+  from mi_critics import ConcatCritic
   actual_cap=[]
   est_cap=[]
   SNRs=SNR
