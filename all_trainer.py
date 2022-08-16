@@ -42,7 +42,7 @@ def all_trainer(typeinp,nit_params,critic_params,SNR,estimator='mine',init_epoch
   device = torch.device(dev)
   ##########
   
-  from nits import NIT,_Channel,PeakConstraint
+  from NITs import NIT,_Channel,PeakConstraint
   from mi_est import MI_Est_Losses
   from mi_nets import ConcatCritic
   actual_cap=[]
