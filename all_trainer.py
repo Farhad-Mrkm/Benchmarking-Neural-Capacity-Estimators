@@ -13,7 +13,7 @@ Original file is located at
 # In[ ]:
 
 
-def train_all(typeinp,nit_params,critic_params,SNR,estimator='mine',init_epoch=100,max_epoch=1000,itr_every_nit=1,itr_every_mi=5,batch_size=256,seed_size=4):
+def all_trainer(typeinp,nit_params,critic_params,SNR,estimator='mine',init_epoch=100,max_epoch=1000,itr_every_nit=1,itr_every_mi=5,batch_size=256,seed_size=4):
   import os
 
   import h5py
