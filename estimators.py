@@ -90,8 +90,7 @@ class MI_Est_Losses():
 
   def infonce_lower_bound(scores):
       nll = scores.diag().mean() - scores.logsumexp(dim=1)
-      # Alternative implementation:
-      # nll = -tf.nn.sparse_softmax_cross_entropy_with_logits(logits=scores, labels=tf.range(batch_size))
+    
       mi = torch.tensor(scores.size(0)).float().log() + nll
       mi = mi.mean()
       return mi
